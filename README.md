@@ -12,11 +12,12 @@ Length (mm):
 Bottom(Gusset) (mm):
 Quantity: 
 
+### Run the model
 In order to predict the unit price from model first make a list of input features in following format:
 
  [Vendor, Material, Configuration, Print, Zipper, Thickness, Width, Length, Bottom, Quantity]
 
-E.g. X = ['Glen','PET/PE','3-Seal','Plate', 'Yes', 110, 76, 127,0,100000]
+E.g. X = ['Glen', 'PET/PE', '3-Seal', 'Plate', 'Yes', 110, 76, 127, 0, 100000]
 
 Then use the model_predict method from prediction.py to make the prediction:
 Run the following command in Python
@@ -37,7 +38,7 @@ prediction.total_weight(X). # This gives total weight.
 prediction.get_exw2(X) # this function returns EXW price after multiplying by a factor which is determined based on 'Digital/Plate', Quantity and width.
 
 
-Python package: 
+### Installation:
 
 In order to install the python package "prediction", unpack the zip file "price_prediction_v3" and "cd" to the directory containing the setup.py file. Then run the following command in the terminal:
 
